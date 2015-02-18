@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adjust the sliders below to change the color of the image." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMc-eM-gNK">
+                                <rect key="frame" x="16" y="20" width="390" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsJ-6e-rvU">
+                                <rect key="frame" x="14" y="93" width="276" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="TzG-7E-E93">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="293"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <action selector="redSliderChangedAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="6KD-lM-ka3"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNQ-AU-DcR">
+                                <rect key="frame" x="14" y="116" width="310" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="urr-IC-SFE">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="293"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <action selector="greenSliderChangedAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="NTO-b4-BTd"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo4-3u-DHd">
+                                <rect key="frame" x="12" y="173" width="312" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="0in-Ak-fTy">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="293"/>
+                                    </constraint>
+                                </constraints>
+                                <connections>
+                                    <action selector="blueSliderChangedAction:" destination="vXZ-lx-hvc" eventType="valueChanged" id="70O-sY-dkX"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1R-wS-Rc1">
+                                <rect key="frame" x="330" y="121" width="54" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                    <rect key="frame" x="324" y="160" width="60" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yb-MU-6Cm">
+                                <rect key="frame" x="335" y="175" width="54" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                    <rect key="frame" x="324" y="216" width="60" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Madras" translatesAutoresizingMaskIntoConstraints="NO" id="c1F-aa-aNS">
+                                <rect key="frame" x="397" y="53" width="175" height="175"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="7SM-ct-hu6">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="368"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="175" id="ovi-Nd-m2e">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="368"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hw2-3n-v7E">
+                                <rect key="frame" x="335" y="80" width="54" height="25"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="21"/>
+                                    <rect key="frame" x="324" y="106" width="60" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fo4-3u-DHd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="2CY-pa-Mmp">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="mMc-eM-gNK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="8Jj-Zv-XTe">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="ZNQ-AU-DcR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Fxi-9s-67P">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="ZNQ-AU-DcR" firstAttribute="top" secondItem="GsJ-6e-rvU" secondAttribute="bottom" constant="24" id="Go2-XA-2h0">
+                                <variation key="heightClass=regular-widthClass=compact" constant="24"/>
+                            </constraint>
+                            <constraint firstItem="mMc-eM-gNK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Jxv-xZ-Y9u">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="GsJ-6e-rvU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="KeG-Db-eOQ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Fo4-3u-DHd" firstAttribute="top" secondItem="ZNQ-AU-DcR" secondAttribute="bottom" constant="26" id="ZBB-cx-Jg8">
+                                <variation key="heightClass=regular-widthClass=compact" constant="26"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="c1F-aa-aNS" secondAttribute="centerX" constant="-209" id="dyB-F8-UY9">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="c1F-aa-aNS" firstAttribute="top" secondItem="Fo4-3u-DHd" secondAttribute="bottom" constant="-139" id="ogt-Jc-JYG">
+                                <variation key="heightClass=regular-widthClass=compact" constant="49"/>
+                            </constraint>
+                            <constraint firstItem="GsJ-6e-rvU" firstAttribute="top" secondItem="mMc-eM-gNK" secondAttribute="bottom" constant="33" id="rOk-0A-tO9">
+                                <variation key="heightClass=regular-widthClass=compact" constant="32"/>
+                            </constraint>
+                            <constraint firstItem="mMc-eM-gNK" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="trV-DA-1w0">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="c1F-aa-aNS" id="D1h-ez-qRn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Madras" width="400" height="400"/>
+    </resources>
+</document>

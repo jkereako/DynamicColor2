@@ -1,5 +1,7 @@
 # Dynamic image color 2
 
+*See [Dynamic image color](https://github.com/jkereako/dynamic-image-color/)*
+
 This is another example of how to change the color of an image dynamically. This example uses the [Core Image filter Color Cross Polynomial](https://developer.apple.com/library/ios/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CIColorCrossPolynomial)
 
 This version of Dynamic image color has more freedom among the color spectrum.
